@@ -16,6 +16,13 @@
 * peur du viol
         </content>
       </femme>
+      <intersex>
+        <content>
+* alien: la société ne sait pas qui vous êtes, vous n'êtes dans aucune case, les gens ne savent pas se comporter avec vous
+* sous représentation: vous n'existez pas dans les médias, vous êtes littéralement invisible à de rares exceptions, personne ne connait votre condition, vous n'avez pas de role modèle et vous avez probablement eu l'impression d'être seul dans votre cas pendant toute votre jeunesse
+* ça va couper!: le corps médicale cherche constament à vous opérer pour vous faire "rentrer dans l'ordre" s'il n'y est pas déjà arriver
+        </content>
+      </intersex>
     </options>
   </sex>
   <couleur_de_peau type="select">
