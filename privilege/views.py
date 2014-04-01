@@ -7,5 +7,11 @@ def index(request):
 
 
 def sheet(request):
-    print request.GET
-    return render(request, "sheet.haml")
+    data = get_categories()
+    new_data = []
+    for i in data:
+        p = i.copy()
+        p["choice"] = {x["value"]: x.copy() for x in p["options"]}[request.GET[p["name"]]]
+        p["others"] = filter(lambda x: x["value"] != request.GET[p["name"]], i["options"])
+        new_data.append(p)
+    return render(request, "sheet.haml", {"categories": new_data})

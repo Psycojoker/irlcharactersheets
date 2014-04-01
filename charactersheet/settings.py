@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'hamlpy',
     'privilege',
     'django_pdb',
+    'markdown_deux',
 )
 
 MIDDLEWARE_CLASSES = (

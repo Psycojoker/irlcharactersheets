@@ -1,0 +1,24 @@
+-extends "base.html"
+-load markdown_deux_tags
+
+-block content
+  .row
+    %h1 Votre fiche de personnage
+    %hr
+
+    -for category in categories
+      %h2 {{ category.title }}: {{ category.choice.title }}
+      %p
+        Votre choix vous donne les caractéristiques suivantes:
+
+      =category.choice.content|markdown
+
+      %p
+        Vous auriez pu avoir:
+
+      %dl.accordion{data-accordion: "true"}
+        -for other in category.others
+          %dd
+            %a{href: "#{{ category.name }}-{{ other.value }}"}= other.title
+            .content{id: "{{ category.name }}-{{ other.value }}"}
+              =other.content|markdown
