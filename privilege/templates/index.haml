@@ -1,0 +1,26 @@
+-extends "base.html"
+
+-block content
+  .row
+    .large-12.columns
+      %h1 Ma fiche de perso IRL
+    %hr
+
+    %p
+      Blabla foobar, expliquer que ça va permettre de connaitre ses buffs IRL.
+
+    %form{action: "sheet/"}
+      -for privilege in privileges
+        %h3= privilege.title
+        %p
+          -if privilege.type == "select"
+            %select
+              -for option in privilege.options
+                %option{value: "{{ option.name }}"}
+                  =option.title
+          -else
+            -for option in privilege.options
+              -if option and option != "\n"
+                %input{type: "{{ option.value|default:checkbox }}"}
+
+      %input{type: "submit"}

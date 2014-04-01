@@ -1,0 +1,14 @@
+!!!
+%html.no-js{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title Fiche de perso IRL
+    %link{href: "{{ STATIC_URL }}css/foundation.css", rel: "stylesheet"}/
+    %script{src: "{{ STATIC_URL }}js/vendor/modernizr.js"}
+  %body
+    -block content
+    %script{src: "{{ STATIC_URL }}js/vendor/jquery.js"}
+    %script{src: "{{ STATIC_URL }}js/foundation.min.js"}
+    :javascript
+      $(document).foundation();

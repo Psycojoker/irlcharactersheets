@@ -1,0 +1,39 @@
+<data>
+  <sex type="select">
+    <title>Sex</title>
+    <options>
+      <homme>
+        <title>Homme</title>
+        <content>
+  * zigounette
+  * +50% en crédibilité
+        </content>
+      </homme>
+      <femme>
+        <title>Femme</title>
+        <content>
+  * -20% en salaire
+  * peur du viol
+        </content>
+      </femme>
+    </options>
+  </sex>
+  <couleur_de_peau type="select">
+    <title>Couleur de peau</title>
+    <options>
+      <blanc>
+        <title>Blanc·he</title>
+        <content>
+* accès privilégié à tout
+        </content>
+      </blanc>
+      <noir>
+        <title>Noir</title>
+        <content>
+* dévelorisé par défaut
+* les gens assumeront par défaut que vous n'êtes pas du pays
+        </content>
+      </noir>
+    </options>
+  </couleur_de_peau>
+</data>
