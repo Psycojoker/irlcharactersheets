@@ -2,3 +2,4 @@ django
 beautifulsoup
 hamlpy
 django-markdown-deux
+django_pdb
