@@ -1,0 +1,4 @@
+django
+beautifulsoup
+hamlpy
+django-markdown-deux
