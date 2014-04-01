@@ -23,7 +23,7 @@
             -for other in category.others
               %dd
                 %a{href: "#{{ category.name }}-{{ other.value }}"}= other.title
-                .content{id: "{{ category.name }}-{{ other.value }}"}
+                .content{id: "{{ category.name }}-{{ other.value }}", class: "{% if forloop.first %}active{% endif %}"}
                   =other.content|markdown
 
     %h2{style: "margin-top: 100px"} Conclusion:
