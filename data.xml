@@ -5,15 +5,15 @@
       <homme>
         <title>Homme</title>
         <content>
-  * zigounette
-  * +50% en crédibilité
+* zigounette
+* +50% en crédibilité
         </content>
       </homme>
       <femme>
         <title>Femme</title>
         <content>
-  * -20% en salaire
-  * peur du viol
+* -20% en salaire
+* peur du viol
         </content>
       </femme>
     </options>
