@@ -9,18 +9,18 @@
     %p
       Blabla foobar, expliquer que ça va permettre de connaitre ses buffs IRL.
 
-    %form{action: "sheet/"}
+    %form{action: "sheet/", method: "get"}
       -for privilege in privileges
         %h3= privilege.title
         %p
           -if privilege.type == "select"
-            %select
+            %select{name: "{{ privilege.name }}"}
               -for option in privilege.options
-                %option{value: "{{ option.name }}"}
+                %option{value: "{{ option.value }}"}
                   =option.title
           -else
             -for option in privilege.options
               -if option and option != "\n"
-                %input{type: "{{ option.value|default:checkbox }}"}
+                %input{name: "{{ option.name }}", type: "{{ option.value|default:checkbox }}"}
 
       %input{type: "submit"}

@@ -8,6 +8,7 @@ def index(request):
         cat = {}
         cat["title"] = category.title.text
         cat["type"] = category["type"]
+        cat["name"] = category.name
         cat["options"] = [{"value": x.name, "title": x.title.text} for x in category.options.childGenerator() if x and x != "\n"]
         data.append(cat)
     return render(request, "index.haml", {"privileges": data})
